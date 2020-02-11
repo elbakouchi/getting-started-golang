@@ -47,7 +47,7 @@ build:
     - script:
        name: Copy binary
        code: |
-           cp ./../myapp   "$WERCKER_OUTPUT_DIR"
+           cp ../myapp   "$WERCKER_OUTPUT_DIR"
         
 deploy:
   steps:
