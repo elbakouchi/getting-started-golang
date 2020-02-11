@@ -43,3 +43,12 @@ build:
         name: go test
         code: |
           go test ./...
+        
+        
+deploy:
+  steps:
+    -internal/docker-scratch-push:
+       username: $DOCKER_USERNAME
+       password: $DOCKER_PASSWORD
+       repository: elbakouchi/mygoapp
+       cmd: ./myapp      
