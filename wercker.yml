@@ -47,6 +47,9 @@ build:
     - script:
        name: Copy binary
        code: |
+           pwd     
+           ls -a
+           ls ../    
            cp ../myapp   "$WERCKER_OUTPUT_DIR"
         
 deploy:
