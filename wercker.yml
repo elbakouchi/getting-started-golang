@@ -50,7 +50,7 @@ build:
            pwd     
            ls -a
            ls ../
-           ls /    
+           ls /home    
            cp myapp   "$WERCKER_OUTPUT_DIR"
         
 deploy:
