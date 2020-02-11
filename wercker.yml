@@ -36,14 +36,18 @@ build:
     - script:
         name: go build
         code: |
-          go build ./...
+          go build ./... -o myapp
 
     # Test the project
     - script:
         name: go test
         code: |
           go test ./...
-        
+    # Save binary
+    - script:
+       name: Copy binary
+       code: |
+           cp ./../myapp   "$WERCKER_OUTPUT_DIR"
         
 deploy:
   steps:
