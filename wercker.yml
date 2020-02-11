@@ -49,8 +49,9 @@ build:
        code: |
            pwd     
            ls -a
-           ls ../    
-           cp ../myapp   "$WERCKER_OUTPUT_DIR"
+           ls ../
+           ls /    
+           cp myapp   "$WERCKER_OUTPUT_DIR"
         
 deploy:
   steps:
